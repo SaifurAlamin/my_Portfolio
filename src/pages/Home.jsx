@@ -24,13 +24,14 @@ const Home = () => {
                     {/* LEFT TEXT SECTION */}
                     <div className="md:w-1/2 space-y-4 text-center md:text-left">
                         <motion.h1
-                            className="text-5xl md:text-6xl font-extrabold"
+                            className="text-4xl sm:text-5xl md:text-6xl font-extrabold"
                             initial={{ opacity: 0, y: 40 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7 }}
                         >
                             Hi, I'm <span className="text-blue-400">Saifur Rahman</span>
                         </motion.h1>
+
 
                         <motion.p
                             className="text-gray-400 max-w-xl mx-auto md:mx-0"
@@ -67,7 +68,7 @@ const Home = () => {
                             <motion.a
                                 href={resume}
                                 download
-                                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold bg-gradient-to-r from-blue-500 to-blue-600 shadow-lg transition-transform duration-300"
+                                className="inline-flex items-center gap-2 px-4 py-2 text-sm md:px-6 md:py-3 rounded-lg font-semibold bg-gradient-to-r from-blue-500 to-blue-600 shadow-lg transition-transform duration-300"
                                 whileHover={{
                                     scale: 1.05,
                                     boxShadow: "0 0 15px rgba(59,130,246,0.6), 0 0 25px rgba(59,130,246,0.4)",
@@ -82,36 +83,37 @@ const Home = () => {
                                 <motion.a
                                     href="https://github.com/SaifurAlamin/"
                                     target="_blank"
-                                    className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center transition-transform duration-300"
+                                    className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gray-800 flex items-center justify-center transition-transform duration-300"
                                     whileHover={{ scale: 1.2, boxShadow: "0 0 12px rgba(59,130,246,0.6)" }}
                                 >
-                                    <FaGithub className="text-white w-5 h-5" />
+                                    <FaGithub className="text-white w-4 h-4 md:w-5 md:h-5" />
                                 </motion.a>
 
                                 <motion.a
                                     href="https://www.linkedin.com/in/saifur-rahman-4a158734a/"
                                     target="_blank"
-                                    className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center transition-transform duration-300"
+                                    className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gray-800 flex items-center justify-center transition-transform duration-300"
                                     whileHover={{ scale: 1.2, boxShadow: "0 0 12px rgba(59,130,246,0.6)" }}
                                 >
-                                    <FaLinkedin className="text-blue-500 w-5 h-5" />
+                                    <FaLinkedin className="text-blue-500 w-4 h-4 md:w-5 md:h-5" />
                                 </motion.a>
 
                                 <motion.a
                                     href="mailto:saifurrahman1614@gmail.com"
                                     target="_blank"
-                                    className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center transition-transform duration-300"
+                                    className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gray-800 flex items-center justify-center transition-transform duration-300"
                                     whileHover={{ scale: 1.2, boxShadow: "0 0 12px rgba(59,130,246,0.6)" }}
                                 >
-                                    <SiGmail className="text-red-500 w-5 h-5" />
+                                    <SiGmail className="text-red-500 w-4 h-4 md:w-5 md:h-5" />
                                 </motion.a>
                             </div>
+
                         </motion.div>
                     </div>
 
                     {/* RIGHT IMAGE SECTION */}
                     <motion.div
-                        className="md:w-1/2 relative flex justify-center items-center"
+                        className="w-full md:w-1/2 relative justify-center items-center hidden md:flex"
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.5 }}
@@ -123,25 +125,27 @@ const Home = () => {
                                 className="w-full h-full object-cover rounded-full"
                             />
 
-                            {/* Floating Tech Logos */}
+                            {/* Floating React Logo */}
                             <motion.div
-                                className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center shadow-lg cursor-pointer"
+                                className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center shadow-lg"
                                 animate={{ y: [-5, 5, -5] }}
                                 transition={{ repeat: Infinity, duration: 2 }}
                             >
                                 <FaReact className="text-blue-400 w-6 h-6" />
                             </motion.div>
 
+                            {/* Floating Node Logo */}
                             <motion.div
-                                className="absolute top-1/2 -right-10 transform -translate-y-1/2 w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center shadow-lg cursor-pointer"
+                                className="absolute top-1/2 -right-10 transform -translate-y-1/2 w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center shadow-lg"
                                 animate={{ y: [0, -5, 0, 5, 0] }}
                                 transition={{ repeat: Infinity, duration: 2.5 }}
                             >
                                 <FaNodeJs className="text-green-500 w-6 h-6" />
                             </motion.div>
 
+                            {/* Floating MongoDB Logo */}
                             <motion.div
-                                className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center shadow-lg cursor-pointer"
+                                className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center shadow-lg"
                                 animate={{ y: [5, -5, 5] }}
                                 transition={{ repeat: Infinity, duration: 2 }}
                             >
@@ -149,6 +153,7 @@ const Home = () => {
                             </motion.div>
                         </div>
                     </motion.div>
+
                 </div>
             </div>
 

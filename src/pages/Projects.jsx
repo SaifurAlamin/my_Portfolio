@@ -32,7 +32,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <section className="bg-gray-950 text-white px-6 md:px-16 py-10">
+        <section className="bg-gray-950 text-white px-6 md:px-16 py-10 pt-2 lg:pt-28">
             <motion.h2
                 className="text-4xl font-bold text-center mb-10"
                 initial={{ opacity: 0, y: 20 }}

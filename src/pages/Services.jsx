@@ -30,7 +30,7 @@ const services = [
 
 const Services = () => {
     return (
-        <section className="bg-gray-950 text-white px-6 md:px-16 py-16">
+        <section className="bg-gray-950 text-white px-6 md:px-16 py-2 lg:py-16">
             {/* Header */}
             <motion.h2
                 className="text-4xl font-bold text-center mb-16"

@@ -34,7 +34,7 @@ const Skills = () => {
     ];
 
     return (
-        <div className="text-center py-16 px-6">
+        <div className="text-center py-2 lg:py-16 px-6">
             <motion.h2
                 className="text-4xl font-bold mb-12 text-white"
                 initial={{ opacity: 0, y: 20 }}
